@@ -38,4 +38,5 @@ CatonBNB’s AI Agent Creator (Beta) is a leap forward in decentralised AI — o
 Launch app : [catonbnb.com](https://catonbnb.com)
 Create agent  : [Build Agent](https://catonbnb.com/build-agent)
 Docs : [catonbnb gitbook](https://catonbnb.gitbook.io) 
-Community : [Telegram](https://t.me/catbuildon_bnb) | [Twitter](https://x.com/catonbnb)  
+Community : [Telegram](https://t.me/catbuildon_bnb)
+[Twitter](https://x.com/catonbnb)  
