@@ -1,0 +1,29 @@
+RewriteEngine On
+
+# Redirect any .php URL to its non-.php version (e.g., token-listed.php -> token-listed)
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteCond %{REQUEST_URI} \.php$ [NC]
+RewriteRule ^(.+)\.php$ /$1 [R=301,L,QSA]
+
+# Internally rewrite non-.php URL back to .php file if it exists (e.g., /token-listed -> token-listed.php)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+)$ $1.php [L,QSA]
+
+# Ensure root path (/) works by mapping to index.php
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^$ index.php [L,QSA]
+
+<IfModule mod_expires.c>
+    ExpiresActive Off
+</IfModule>
+
+<IfModule mod_headers.c>
+    <FilesMatch "\.(php|css|js|png|jpg|jpeg|gif|svg|woff|woff2|ttf|eot|ico)$"> 
+        Header set Cache-Control "no-store, no-cache, must-revalidate, max-age=0"
+        Header set Pragma "no-cache"
+        Header set Expires 0
+    </FilesMatch>
+</IfModule>

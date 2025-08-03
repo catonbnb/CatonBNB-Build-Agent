@@ -1,0 +1,16 @@
+CREATE TABLE IF NOT EXISTS agents (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    wallet_address VARCHAR(42) NOT NULL,
+    image VARCHAR(255) NOT NULL,
+    name VARCHAR(100) NOT NULL,
+    `character` ENUM('friendly', 'professional') NOT NULL,
+    skill ENUM('doctor', 'assistant', 'accounting', 'pr', 'crypto_analyst') NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS users (
+    wallet_address VARCHAR(42) PRIMARY KEY,
+    points INT DEFAULT 0,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

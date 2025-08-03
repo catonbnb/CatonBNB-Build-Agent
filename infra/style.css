@@ -1,0 +1,220 @@
+/* Custom gradient colors */
+:root {
+    --binance-yellow: #F0B90B;
+    --binance-yellow-dark: #D4A017;
+    --green-500: #22C55E;
+    --green-600: #16A34A;
+}
+
+body {
+    background: #0a0a0a !important;
+    height: 100%;
+}
+
+.bg-gray-800 {
+    background: rgb(0 0 0) !important;
+}
+
+html {
+    height: 100%;
+}
+
+#contentWrapper.blur {
+    filter: blur(5px);
+    transition: filter 0.3s ease;
+}
+
+header {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+
+nav a {
+    transition: color 0.3s ease;
+}
+
+.mx-auto {
+    height: 100%;
+}
+.mx-hg{
+    height: 100%;
+}
+.footer {
+    background: #000;
+    color: #888;
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.95rem;
+}
+
+#agentList .agent-card {
+    background: #051000;
+    border-radius: 8px;
+    border: solid 1px #8dbf33;
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#agentList .agent-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+#agentList img {
+    object-fit: cover;
+    border-radius: 8px;
+    width: 100%;
+    height: 12rem;
+}
+
+.grid-border {
+    position: relative;
+    z-index: 0;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.grid-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(to right, yellow, #1d3b28);
+    border-radius: 8px;
+    padding: 1px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+button {
+    transition: background-color 0.3s ease, background-image 0.3s ease;
+}
+
+#mobileMenu {
+    transition: all 0.3s ease;
+    z-index: 1000;
+}
+
+#noAgentsMessage {
+    padding: 1.5rem;
+    background: #2d3748;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.no-agents-image {
+    max-width: 100%;
+    height: auto;
+    max-height: 300px;
+    margin: 0 auto;
+    display: block;
+}
+
+.btn-primary {
+    background-image: linear-gradient(to right, var(--binance-yellow), #1d3b28);
+}
+
+.btn-primary:hover {
+    background-image: linear-gradient(to right, var(--binance-yellow-dark), var(--green-600));
+}
+
+main .flex.justify-end button {
+    min-width: 100px;
+    font-size: 0.875rem;
+}
+
+.agent-card .edit-agent {
+    background-image: linear-gradient(to right, var(--binance-yellow), var(--green-500));
+}
+
+.agent-card .edit-agent:hover {
+    background-image: linear-gradient(to right, var(--binance-yellow-dark), var(--green-600));
+}
+
+form input,
+form select {
+    font-size: 0.875rem;
+}
+
+.popup-content {
+    border: 2px solid transparent;
+    border-image: linear-gradient(to right, var(--binance-yellow), var(--green-500)) 1;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 2000;
+}
+
+.welcome-popup,
+.success-popup,
+.connect-wallet-popup,
+.max-agents-popup {
+    border: none; /* Inherit from .popup-content */
+}
+
+.welcome-popup {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome-popup img {
+    max-width: 100%;
+    height: auto;
+    max-height: 200px;
+}
+
+#welcomePopup,
+#connectWalletFirstPopup,
+#maxAgentsPopup,
+#successPopup,
+#editAgentPopup,
+#createAgentPopup,
+#disconnectWalletPopup {
+    z-index: 1000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    #agentList .agent-card {
+        padding: 0.75rem;
+    }
+    #agentList img {
+        height: 10rem;
+    }
+    main .flex.justify-end {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+    main .flex.justify-end button {
+        flex: 1 1 100px;
+    }
+    .popup-content {
+        padding: 1rem;
+    }
+    .no-agents-image {
+        max-height: 200px;
+    }
+    .welcome-popup {
+        flex-direction: column;
+    }
+    .welcome-popup img {
+        max-height: 150px;
+        margin-bottom: 1rem;
+    }
+}
