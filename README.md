@@ -1,5 +1,10 @@
 # CatonBNB-Build-Agent
-🌟 Key Features of CatonBNB AI Agent Creator (Beta)
+
+WELCOME TO CatonBNB AGI
+Source : [Catonbnb gitbook](https://catonbnb.gitbook.io)
+ 
+**🌟 Key Features of CatonBNB AI Agent Creator (Beta)**
+
 The beta version introduces several powerful features designed to make AI creation more accessible than ever:
 1. User-Friendly Interface
 Whether you’re a tech expert or complete beginner, CatonBNB’s simple and intuitive design allows anyone to build an AI Agent in just a few steps — no coding required. Just define your agent's purpose and parameters, and you're ready to deploy.
@@ -12,7 +17,8 @@ Built with advanced NLP (Natural Language Processing), CatonBNB AI Agents can co
 5. Responsive & Mobile-Friendly
 Designed for seamless performance across all screen sizes, the platform works smoothly on both desktop and mobile devices — making AI creation accessible anywhere, anytime.
 
-🧠 How to Use the CatonBNB AI Agent Creator (Beta)
+🧠** How to Use the CatonBNB AI Agent Creator (Beta)**
+
 Creating your own AI Agent is simple and secure:
 1. Connect Your Wallet
 Click “Connect Wallet” and link your MetaMask to the BSC network.
@@ -24,10 +30,12 @@ Input your Agent’s name, personality, and skills. You can also upload a custom
 After setup, your Agent data will be saved securely on-chain using BSC-integrated storage.
 5. Manage Your Agents
 Access your dashboard to view and manage your AI Agents. If no agents exist, a friendly "no-agents.png" featuring a cute cat illustration will invite you to create your first Agent.
-🌐 Join the AI Revolution with CatonBNB
+
+🌐** Join the AI Revolution with CatonBNB**
+
 CatonBNB’s AI Agent Creator (Beta) is a leap forward in decentralised AI — offering an accessible, secure, and scalable way for everyone to build smart, autonomous assistants without technical barriers.
 
-Launch app : catonbnb
-Create agent  : AI Agent Creator
-Docs : catonbnb gitbook
-Community : Telegram
+Launch app : [catonbnb.com](https://catonbnb.com)
+Create agent  : [Build Agent](https://catonbnb.com/build-agent)
+Docs : [catonbnb gitbook](https://catonbnb.gitbook.io) 
+Community : [Telegram](https://t.me/catbuildon_bnb) | [Twitter](https://x.com/catonbnb)  
